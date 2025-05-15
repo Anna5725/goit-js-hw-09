@@ -15,3 +15,106 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  ul,
+  ol {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  button{
+    cursor:pointer;
+  }
+
+  /*Gallery*/
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px; 
+  }
+  
+  .gallery-item{
+    width: calc((100% - 48px) / 3);
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+    
+  .gallery-item.hover{
+    transform: scale();
+  }
+  .gallery-image{
+    width: 360px;
+height: auto;
+border-radius: 8px;
+  }
+  .modal {
+    width: 1440px;
+    height:696px;
+
+  background: rgba(46, 47, 66, 0.8);
+  cursor:pointer;
+  border-radius:10px;
+  }
+  .modal-image{
+    width:1112px;
+    height:640px
+  }
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  align-items: center;
+border-radius: 8px;
+padding: 24px;
+width: 408px;
+}
+.label{
+  margin-bottom: 8px;
+}
+.input{
+width: 360px;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+.textarea{
+width: 360px;
+height: 112px;
+}
+.btn{
+border-radius: 8px;
+padding: 8px 16px;
+width: 95px;
+background: #4e75ff;
+margin-top: 16px;
+color: #fff;
+}
+.btn:hover{
+  background: #6c8cff;
+}
